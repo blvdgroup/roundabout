@@ -1,0 +1,39 @@
+// Helpers
+//
+// Basic helpers for HTML layouts.
+
+// TODO: Create modifier classes for text elements w/ backgrounds (like links, etc.)
+
+// Clear inner floats
+.clearfix {
+  @include clearfix;
+}
+
+// Text alignment
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+// Text modifiers
+.text-muted {
+  color: $body-color-muted;
+}
+
+// Visibility
+.hidden-sm {
+  @media (max-width: $media-breakpoint-lg) {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  @media (min-width: $media-breakpoint-lg) {
+    display: none;
+  }
+}

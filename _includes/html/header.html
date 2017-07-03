@@ -1,0 +1,16 @@
+<header class="masthead">
+  <div class="container">
+    <a class="masthead-title" href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+    <small>{{ site.tagline }}</small>
+    <nav class="masthead-nav">
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if  node.layout == "page" or node.title == "Home" %}
+          <a class="{% if page.url == node.url %}current{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,31 @@
+{
+  "name": "roundabout",
+  "version": "0.1.0",
+  "description": "Minimalist, customizable Jekyll theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blvdgroup/roundabout.git"
+  },
+  "keywords": [
+    "jekyll",
+    "theme"
+  ],
+  "author": "Resi Respati <resir014@blvd.space>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blvdgroup/roundabout/issues"
+  },
+  "homepage": "https://github.com/blvdgroup/roundabout#readme",
+  "devDependencies": {
+    "cz-blvd": "^0.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-blvd"
+    }
+  }
+}
