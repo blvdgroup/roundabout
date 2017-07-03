@@ -16,7 +16,6 @@
 .page-header,
 .post-header {
   margin-bottom: 2rem;
-  color: $inverse-color;
 
   .page-header-inner,
   .post-header-inner {
@@ -25,10 +24,20 @@
     margin-right: -($container-padding);
     padding: .5rem 1rem;
     background-color: $post-header-background-color;
+    color: $post-header-title-color;
 
     @media (min-width: $media-breakpoint-lg) {
       margin-left: -($container-padding-lg);
       padding-left: $container-padding-lg;
+    }
+
+    // Custom modifier for posts with external links
+    &.post-external-link {
+      color: $post-header-external-color;
+
+      a {
+        color: $post-header-external-color;
+      }
     }
   }
 }
