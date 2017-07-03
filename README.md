@@ -42,21 +42,56 @@ Now you can work on your own Jekyll website! Open `localhost:4000` in your brows
 
 This theme also provides additional development tools with [Node.js](https://nodejs.org/en/).
 
-**TODO:** Consider using gulp? Some of these commands are a little finicky. [This old gruntfile](https://github.com/resir014/resir014.github.io/blob/master/Gruntfile.js) that I did for my current website is a good place to start.
-
 Run the following command to install them.
 
 ```bash
 $ npm install
 ```
 
-To optimise image files before pushing to the repo, run this command.
+Our commit logs are [Commitizen-friendly](https://commitizen.github.io/cz-cli/). We use Commitizen with the `cz-blvd` extension as part of our commit naming conventions. To use it we can simply use the Commitizen CLI.
 
 ```bash
-$ npm run optimise
+# Install the Commitizen CLI
+$ npm install -g commitizen
+# Install our dependencies if you haven't already (`cz-blvd` will be downloaded now.)
+$ npm install
+# To commit using the Commitizen conventions, you can choose either of these two commands:
+$ git cz
+$ npm run commit
 ```
 
-**TODO:** This is on hold until [imagemin/imagemin-cli#11](https://github.com/imagemin/imagemin-cli/pull/11) is implemented. Also see above TODO.
+## Deploying
+
+### GitHub Pages
+
+Deploying to GitHub Pages is really simple. First open your `_config.yml` file and update these config variables based on your hosting environment.
+
+```yml
+url: http://blvd.space
+baseurl: "/roundabout"
+```
+
+The `url` config contains the **host** of your website, whereas the `baseurl` config contains the **base directory** of your generated site. The rule of thumb to these configurations is as follows:
+
+* Set `url` the root domain of your host, **without** the trailing slash. For GitHub Pages with no custom domains, this should be `https://<username>.github.io`.
+* If the generated page is a *user page*, then leave the `baseurl` config blank (e.g. `baseurl: ""`).
+* If it's a *project page*, set it to the **name** of your project, **without** the trailing slash once again (e.g. `baseurl: "/roundabout"`).
+
+Once it's properly configured just push your commits to your repository, set the GitHub pages settings on your repository to target to the branch where your files is hosted in, and you have yourself a working GitHub page!
+
+Learn more about GitHub Pages deployment on the [Jekyll docs](https://jekyllrb.com/docs/github-pages/){:target="_blank"}.
+
+## Contributing
+
+Issues and Pull Requests are welcome! Please read our [Contributing Guidelines](https://github.com/blvdgroup/guidelines) & [Code of Conduct](https://github.com/blvdgroup/guidelines/blob/master/CONDUCT.md) beforehand.
+
+As a general rule of thumb:
+
+1. [Fork it.](https://github.com/blvdgroup/roundabout/fork)
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Create a new Pull Request.
 
 ## License
 
