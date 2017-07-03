@@ -66,3 +66,24 @@
   margin-top: -.5rem;
   margin-bottom: .5rem;
 }
+
+// Post subtitle/abstract
+// 1. This is needed for Chrome and Safari to properly render `box-decoration-
+// break`.
+.post-subtitle {
+  margin: 2rem 0;
+
+  span {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0 .25rem;
+    background-color: $base0C;
+    -webkit-box-decoration-break: clone; // 1
+    box-decoration-break: clone;
+
+    @media (min-width: $media-breakpoint-md) {
+      font-size: 1.5rem;
+    }
+  }
+}

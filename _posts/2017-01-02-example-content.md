@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Example content
-abstract: "This is an example blog post that shows several types of HTML content supported in this theme."
+subtitle: "This is an example blog post that shows several types of HTML content supported in this theme."
 ---
-
-<div class="message">
-  This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
 
 # Heading 1
 
