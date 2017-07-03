@@ -61,7 +61,7 @@
     color: $masthead-link-active-color;
 
     @include on-event {
-      background-color: $masthead-link-background-color;
+      background-color: $masthead-link-active-background-color;
     }
   }
 
