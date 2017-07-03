@@ -1,7 +1,9 @@
 <header class="masthead">
   <div class="container">
     <a class="masthead-title" href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+    {% if site.tagline %}
     <small>{{ site.tagline }}</small>
+    {% endif %}
     <nav class="masthead-nav">
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
