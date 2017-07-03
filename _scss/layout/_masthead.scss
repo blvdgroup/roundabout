@@ -28,7 +28,7 @@
     background-color: $masthead-title-background-color;
 
     @include on-event {
-      color: $base0C;
+      color: $masthead-title-hover-color;
       text-decoration: none;
     }
   }

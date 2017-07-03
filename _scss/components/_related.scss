@@ -35,7 +35,7 @@
     a {
       color: $heading-color;
 
-      &:hover {
+      @include on-event {
         text-decoration: none;
 
         small {
