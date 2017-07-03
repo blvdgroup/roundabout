@@ -4,8 +4,8 @@ permalink:           pretty
 # Setup
 title:               "Roundabout"
 tagline:             "A Jekyll theme."
-url:                 http://getpoole.com
-baseurl:             ""
+url:                 http://blvd.space
+baseurl:             "/roundabout"
 
 # Google Analytics (uncomment if you have any)
 # analytics_id:        "id"
@@ -21,7 +21,7 @@ sass:
 author:
   name:              Resi Respati
   url:               https://resir014.xyz
-  email:             resir014@gmail.com
+  email:             resir014@blvd.space
 
 # Custom vars
 version:             1.0.0
