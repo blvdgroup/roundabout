@@ -19,17 +19,28 @@
   list-style: none;
 
   li {
+    margin: .25rem 0;
+
+    span {
+      display: inline-block;
+      padding: 0 .5rem;
+      background-color: $post-archive-background-color;
+    }
+
     small {
       font-size: 75%;
       color: $body-color-muted;
     }
 
-    a:hover {
-      color: $link-color;
-      text-decoration: none;
+    a {
+      color: $heading-color;
 
-      small {
-        color: inherit;
+      &:hover {
+        text-decoration: none;
+
+        small {
+          color: inherit;
+        }
       }
     }
   }
