@@ -2,6 +2,8 @@
 
 > Minimalist, customizable Jekyll theme.
 
+[Download the latest (zipped) copy here.](https://github.com/blvdgroup/roundabout/archive/master.zip)
+
 [**TODO:** Extended description.]
 
 ## Developing & running locally
@@ -12,7 +14,13 @@ Requirements:
 * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
 * [Node.js](https://nodejs.org/en/) (latest LTS is recommended) - Optional, for additional developer tools
 
-To get started, download the latest zipped build of the Roundabout [here](https://github.com/blvdgroup/roundabout/archive/master.zip).
+To use this theme for your Jekyll website, first download the latest zipped build of the Roundabout [here](https://github.com/blvdgroup/roundabout/archive/master.zip).
+
+You can also clone the repository on GitHub.
+
+```bash
+$ git clone https://github.com/blvdgroup/roundabout.git
+```
 
 Extract it, `cd` to the root directory of the extracted theme, and then install all the bundled Rubygems.
 
@@ -27,6 +35,8 @@ After the plugins are installed, we can now run a local server from within our c
 ```bash
 $ bundle exec jekyll serve
 ```
+
+Now you can work on your own Jekyll website! Open `localhost:4000` in your browser to view it locally. Any saved changes will be rebuilt by Jekyll, so refresh your browser when you do.
 
 ### Optional development tools
 
