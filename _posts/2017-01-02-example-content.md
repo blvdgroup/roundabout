@@ -9,7 +9,7 @@ title: Example content
 
 # Heading 1
 
-<p class="lead">Lead paragraph - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eos minus eaque natus magnam, placeat. Ea iusto obcaecati modi aliquid, mollitia earum, ratione temporibus iste totam fugiat, exercitationem vel, dolor.
+<p class="lead">Lead paragraph - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eos minus eaque natus magnam, placeat. Ea iusto obcaecati modi aliquid, mollitia earum, ratione temporibus iste totam fugiat, exercitationem vel, dolor.</p>
 
 Quibusdam excepturi vero, voluptatibus cumque mollitia quisquam dolorum unde, maiores quam necessitatibus quos. Pariatur nulla sequi qui aut fuga deserunt reiciendis, laboriosam, labore temporibus eligendi optio assumenda voluptates, vero nemo.
 
