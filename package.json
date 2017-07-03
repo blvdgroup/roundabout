@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/blvdgroup/roundabout#readme",
   "devDependencies": {
+    "commitizen": "^2.9.6",
     "cz-blvd": "^0.1.0"
   },
   "config": {
