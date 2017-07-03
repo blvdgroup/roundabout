@@ -21,12 +21,6 @@
   li {
     margin: .25rem 0;
 
-    span {
-      display: inline-block;
-      padding: 0 .5rem;
-      background-color: $post-archive-background-color;
-    }
-
     small {
       font-size: 75%;
       color: $body-color-muted;
@@ -40,6 +34,24 @@
 
         small {
           color: inherit;
+        }
+      }
+
+      span {
+        display: inline-block;
+        padding: 0 .5rem;
+        background-color: $post-archive-background-color;
+
+        @include on-event {
+          background-color: darken($post-archive-background-color, 5%);
+        }
+      }
+
+      .is-external {
+        background-color: $post-archive-external-background-color;
+
+        @include on-event {
+          background-color: darken($post-archive-external-background-color, 5%);
         }
       }
     }
