@@ -62,7 +62,7 @@
 //    break`.
 // 2. Use only 70% of the screen width on tablet/desktop screens
 .post-subtitle {
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   @media (min-width: $media-breakpoint-sm) {
     width: 70%; // 2
