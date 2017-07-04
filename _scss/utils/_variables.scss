@@ -24,8 +24,7 @@ $base0E: #a16a94;
 $base0F: #cdab53;
 
 // Reassign color vars to the appropriate color name
-$theme-heading: $base00;
-$theme-body: $base07;
+$theme-accent0: $base08;
 $theme-accent1: $base0D;
 $theme-accent2: $base0C;
 $theme-accent3: $base0A;
@@ -63,10 +62,10 @@ $table-border-color: darken($border-color, 5%);
 $table-odd-background-color: darken($body-bg, 5%);
 
 // Code
-$code-color: $theme-alizarincrimson;
+$code-color: $base08;
 $code-background-color: darken($base07, 5%);
 $code-linenos-color: $base05;
-$inverse-code-color: $theme-alizarincrimson;
+$inverse-code-color: $base08;
 $inverse-code-background-color: $base01;
 
 // Blockquote
