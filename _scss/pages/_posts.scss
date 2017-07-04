@@ -13,6 +13,11 @@
 }
 
 // Wrapper for post/page header
+// 1. Negative margin is applied according to the container margin to
+//    ensure the content aligns cleanly
+// 2. Positive padding on the left side to counter the negative margin for that
+//    distinct box effect
+// 3. Different right padding for larger screens
 .page-header,
 .post-header {
   margin-bottom: 2rem;
@@ -20,15 +25,16 @@
   .page-header-inner,
   .post-header-inner {
     display: inline-block;
-    margin-left: -($container-padding);
-    margin-right: -($container-padding);
-    padding: .5rem 2rem;
+    margin-left: -($container-padding); // 1
+    margin-right: -($container-padding); // 1
+    padding: .5rem $container-padding; // 2
     background-color: $post-header-background-color;
     color: $post-header-title-color;
 
     @media (min-width: $media-breakpoint-lg) {
-      margin-left: -($container-padding-lg);
-      padding-left: $container-padding-lg;
+      margin-left: -($container-padding-lg); // 1
+      padding-left: $container-padding-lg; // 2
+      padding-right: 2rem;
     }
 
     // Custom modifier for posts with external links
@@ -69,10 +75,14 @@
 
 // Post subtitle/abstract
 // 1. This is needed for Chrome and Safari to properly render `box-decoration-
-// break`.
+//    break`.
+// 2. Use only 70% of the screen width on tablet/desktop screens
 .post-subtitle {
   margin: 2rem 0;
-  width: 70%;
+
+  @media (min-width: $media-breakpoint-sm) {
+    width: 70%; // 2
+  }
 
   span {
     font-size: 1.25rem;
