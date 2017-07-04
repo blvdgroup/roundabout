@@ -21,16 +21,82 @@
 }
 
 // Text modifiers
+.text-base {
+  color: $body-color !important;
+}
 .text-muted {
-  color: $body-color-muted;
+  color: $body-color-muted !important;
 }
-
 .text-heading {
-  color: $heading-color;
+  color: $heading-color !important;
+}
+.text-inverse {
+  color: $inverse-color !important;
+}
+.text-alizarincrimson {
+  color: $theme-alizarincrimson !important;
+}
+.text-melanie {
+  color: $theme-melanie !important;
+}
+.text-turbo {
+  color: $theme-turbo !important;
+}
+.text-greenhaze {
+  color: $theme-greenhaze !important;
+}
+.text-icecold {
+  color: $theme-icecold !important;
+}
+.text-cerulean {
+  color: $theme-cerulean !important;
+}
+.text-strikemaster {
+  color: $theme-strikemaster !important;
+}
+.text-roti {
+  color: $theme-roti !important;
 }
 
-.text-primary {
-  //
+// Background modifiers
+.bg-base {
+  background-color: $body-bg !important;
+}
+.bg-muted {
+  background-color: $body-color-muted !important;
+}
+.bg-heading {
+  background-color: $heading-color !important;
+}
+.bg-inverse {
+  background-color: $inverse-bg !important;
+}
+.bg-inverse-heading {
+  background-color: $inverse-heading-color !important;
+}
+.bg-alizarincrimson {
+  background-color: $theme-alizarincrimson !important;
+}
+.bg-melanie {
+  background-color: $theme-melanie !important;
+}
+.bg-turbo {
+  background-color: $theme-turbo !important;
+}
+.bg-greenhaze {
+  background-color: $theme-greenhaze !important;
+}
+.bg-icecold {
+  background-color: $theme-icecold !important;
+}
+.bg-cerulean {
+  background-color: $theme-cerulean !important;
+}
+.bg-strikemaster {
+  background-color: $theme-strikemaster !important;
+}
+.bg-roti {
+  background-color: $theme-roti !important;
 }
 
 // Visibility
