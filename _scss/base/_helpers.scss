@@ -2,8 +2,6 @@
 //
 // Basic helpers for HTML layouts.
 
-// TODO: Create modifier classes for text elements w/ backgrounds (like links, etc.)
-
 // Clear inner floats
 .clearfix {
   @include clearfix;
