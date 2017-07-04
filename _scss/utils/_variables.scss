@@ -79,6 +79,12 @@ $post-archive-date-color: $body-color-muted;
 $post-archive-background-color: $base0C;
 $post-archive-external-background-color: $base09;
 
+// Pagination
+$pagination-color: $heading-color;
+$pagination-background-hover-color: $base0C;
+$pagination-disabled-color: $body-color-muted;
+$pagination-disabled-background-hover-color: darken($body-bg, 5%);
+
 // Masthead
 $masthead-title-color: $base07;
 $masthead-title-hover-color: $base0A;

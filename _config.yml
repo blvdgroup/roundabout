@@ -7,6 +7,10 @@ tagline:             "A Jekyll theme."
 url:                 http://blvd.space
 baseurl:             "/roundabout"
 
+# Pagination (uncomment if you want posts to paginate)
+# paginate:            1
+# paginate_path:       "/page/:num/"
+
 # Google Analytics (uncomment if you have any)
 # analytics_id:        "id"
 

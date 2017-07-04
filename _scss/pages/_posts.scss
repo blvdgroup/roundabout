@@ -21,6 +21,10 @@
   .post-header-inner {
     @include section-heading;
 
+    a {
+      color: inherit;
+    }
+
     // Custom modifier for posts with external links
     &.post-external-link {
       color: $post-header-external-color;

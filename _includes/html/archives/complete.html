@@ -1,0 +1,53 @@
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <header class="post-header">
+      <div class="post-header-inner{% if post.external_url %} post-external-link{% endif %}">
+        {% if post.external_url %}
+          <h1 class="post-title">
+            <a href="{{ page.external_url }}" target="_blank">{{ post.title }} &raquo;</a>
+          </h1>
+        {% else %}
+          <h1 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h1>
+        {% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+        {% capture words %}
+          {{ post.content | number_of_words | minus: 180 }}
+        {% endcapture %}
+        {% unless words contains "-" or post.external_url %}
+          <span class="post-reading-time">{{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}</span>
+        {% endunless %}
+      </div>
+      {% if post.subtitle %}
+      <div class="post-subtitle">
+        <span>{{ post.subtitle }}</span>
+      </div>
+      {% endif %}
+    </header>
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <div class="pagination-column">
+      <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+    </div>
+  {% else %}
+    <div class="pagination-column">
+      <span class="pagination-item pagination-item-disabled">Older</span>
+    </div>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <div class="pagination-column">
+      <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+    </div>
+  {% else %}
+    <div class="pagination-column">
+      <span class="pagination-item pagination-item-disabled">Newer</span>
+    </div>
+  {% endif %}
+</div>
