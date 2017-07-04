@@ -58,24 +58,19 @@
 }
 
 // Post subtitle/abstract
-// 1. This is needed for Chrome and Safari to properly render `box-decoration-
-//    break`.
-// 2. Use only 70% of the screen width on tablet/desktop screens
+// 1. Use only 70% of the screen width on tablet/desktop screens
 .post-subtitle {
   margin: 1rem 0;
 
   @media (min-width: $media-breakpoint-sm) {
-    width: 70%; // 2
+    width: 70%; // 1
   }
 
   span {
+    @include highlighted-text($base0C, 0, .25rem);
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.75;
-    padding: 0 .25rem;
-    background-color: $base0C;
-    -webkit-box-decoration-break: clone; // 1
-    box-decoration-break: clone;
 
     @media (min-width: $media-breakpoint-md) {
       font-size: 1.5rem;

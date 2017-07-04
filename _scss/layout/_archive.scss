@@ -20,9 +20,7 @@
 
   .archive-title {
     display: inline-block;
-    color: $post-archive-title-color;
-    background-color: $post-archive-background-color;
-    padding: .25rem .5rem;
+    @include highlighted-text($post-archive-background-color, .25rem, .5rem);
 
     @include on-event {
       background-color: darken($post-archive-background-color, 5%);

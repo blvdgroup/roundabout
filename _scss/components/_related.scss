@@ -27,8 +27,7 @@
 
       span {
         display: inline-block;
-        padding: 0 .5rem;
-        background-color: $post-archive-background-color;
+        @include highlighted-text($post-archive-background-color, 0, .25rem);
 
         @include on-event {
           background-color: darken($post-archive-background-color, 5%);

@@ -56,3 +56,16 @@
     padding-right: 2rem; // 3
   }
 }
+
+/// Create highlighted text with padding that correctly wraps.
+/// 1. This is needed for Chrome and Safari to properly render `box-decoration-
+///    break`.
+/// @param $background - Highlight background
+/// @param $vertical-padding [0] - Set vertical padding for the wrapper
+/// @param $horizontal-padding [.25rem] - Set horizontal padding for the wrapper
+@mixin highlighted-text($background, $vertical-padding: 0, $horizontal-padding: .25rem) {
+  padding: $vertical-padding $horizontal-padding;
+  background-color: $background;
+  -webkit-box-decoration-break: clone; // 1
+  box-decoration-break: clone;
+}
