@@ -1,0 +1,24 @@
+// Widgets
+//
+// Use this class to wrap any widgets we have below the content (related posts, etc.)
+
+.widget {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .widget-title {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: -($container-padding); // 1
+    margin-right: -($container-padding); // 1
+    padding: .25rem $container-padding; // 2
+    background-color: $post-header-background-color;
+    color: $post-header-title-color;
+
+    @media (min-width: $media-breakpoint-lg) {
+      margin-left: -($container-padding-lg); // 1
+      padding-left: $container-padding-lg; // 2
+      padding-right: 2rem;
+    }
+  }
+}

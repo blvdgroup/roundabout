@@ -25,15 +25,15 @@
   .page-header-inner,
   .post-header-inner {
     display: inline-block;
-    margin-left: -($container-padding); // 1
-    margin-right: -($container-padding); // 1
-    padding: .5rem $container-padding; // 2
+    margin-left: -($container-padding);
+    margin-right: -($container-padding);
+    padding: .5rem $container-padding;
     background-color: $post-header-background-color;
     color: $post-header-title-color;
 
     @media (min-width: $media-breakpoint-lg) {
-      margin-left: -($container-padding-lg); // 1
-      padding-left: $container-padding-lg; // 2
+      margin-left: -($container-padding-lg);
+      padding-left: $container-padding-lg;
       padding-right: 2rem;
     }
 
