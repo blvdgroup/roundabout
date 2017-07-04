@@ -20,7 +20,7 @@
   text-align: right;
 }
 
-// Text modifiers
+// Semantic text modifiers
 .text-base {
   color: $body-color !important;
 }
@@ -33,32 +33,58 @@
 .text-inverse {
   color: $inverse-color !important;
 }
-.text-alizarincrimson {
-  color: $theme-alizarincrimson !important;
+
+// Base16 text modifiers
+.text-base00 {
+  color: $base00 !important;
 }
-.text-melanie {
-  color: $theme-melanie !important;
+.text-base01 {
+  color: $base01 !important;
 }
-.text-turbo {
-  color: $theme-turbo !important;
+.text-base02 {
+  color: $base02 !important;
 }
-.text-greenhaze {
-  color: $theme-greenhaze !important;
+.text-base03 {
+  color: $base03 !important;
 }
-.text-icecold {
-  color: $theme-icecold !important;
+.text-base04 {
+  color: $base04 !important;
 }
-.text-cerulean {
-  color: $theme-cerulean !important;
+.text-base05 {
+  color: $base05 !important;
 }
-.text-strikemaster {
-  color: $theme-strikemaster !important;
+.text-base06 {
+  color: $base06 !important;
 }
-.text-roti {
-  color: $theme-roti !important;
+.text-base07 {
+  color: $base07 !important;
+}
+.text-base08 {
+  color: $base08 !important;
+}
+.text-base09 {
+  color: $base09 !important;
+}
+.text-base0A {
+  color: $base0A !important;
+}
+.text-base0B {
+  color: $base0B !important;
+}
+.text-base0C {
+  color: $base0C !important;
+}
+.text-base0D {
+  color: $base0D !important;
+}
+.text-base0E {
+  color: $base0E !important;
+}
+.text-base0F {
+  color: $base0F !important;
 }
 
-// Background modifiers
+// Semantic background modifiers
 .bg-base {
   background-color: $body-bg !important;
 }
@@ -71,43 +97,80 @@
 .bg-inverse {
   background-color: $inverse-bg !important;
 }
-.bg-inverse-heading {
-  background-color: $inverse-heading-color !important;
+
+// Base16 background modifiers
+.bg-base00 {
+  background-color: $base00 !important;
 }
-.bg-alizarincrimson {
-  background-color: $theme-alizarincrimson !important;
+.bg-base01 {
+  background-color: $base01 !important;
 }
-.bg-melanie {
-  background-color: $theme-melanie !important;
+.bg-base02 {
+  background-color: $base02 !important;
 }
-.bg-turbo {
-  background-color: $theme-turbo !important;
+.bg-base03 {
+  background-color: $base03 !important;
 }
-.bg-greenhaze {
-  background-color: $theme-greenhaze !important;
+.bg-base04 {
+  background-color: $base04 !important;
 }
-.bg-icecold {
-  background-color: $theme-icecold !important;
+.bg-base05 {
+  background-color: $base05 !important;
 }
-.bg-cerulean {
-  background-color: $theme-cerulean !important;
+.bg-base06 {
+  background-color: $base06 !important;
 }
-.bg-strikemaster {
-  background-color: $theme-strikemaster !important;
+.bg-base07 {
+  background-color: $base07 !important;
 }
-.bg-roti {
-  background-color: $theme-roti !important;
+.bg-base08 {
+  background-color: $base08 !important;
+}
+.bg-base09 {
+  background-color: $base09 !important;
+}
+.bg-base0A {
+  background-color: $base0A !important;
+}
+.bg-base0B {
+  background-color: $base0B !important;
+}
+.bg-base0C {
+  background-color: $base0C !important;
+}
+.bg-base0D {
+  background-color: $base0D !important;
+}
+.bg-base0E {
+  background-color: $base0E !important;
+}
+.bg-base0F {
+  background-color: $base0F !important;
 }
 
 // Visibility
-.hidden-sm {
-  @media (max-width: $media-breakpoint-lg) {
+.hidden-xs {
+  @media (max-width: $media-breakpoint-xs) {
     display: none;
   }
 }
-
+.hidden-sm {
+  @media (max-width: $media-breakpoint-sm) {
+    display: none;
+  }
+}
+.hidden-md {
+  @media (max-width: $media-breakpoint-md) {
+    display: none;
+  }
+}
 .hidden-lg {
   @media (min-width: $media-breakpoint-lg) {
+    display: none;
+  }
+}
+.hidden-xl {
+  @media (max-width: $media-breakpoint-xl) {
     display: none;
   }
 }

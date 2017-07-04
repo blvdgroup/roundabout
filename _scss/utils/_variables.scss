@@ -26,14 +26,10 @@ $base0F: #cdab53;
 // Reassign color vars to the appropriate color name
 $theme-heading: $base00;
 $theme-body: $base07;
-$theme-alizarincrimson: $base08;
-$theme-melanie: $base09;
-$theme-turbo: $base0A;
-$theme-greenhaze: $base0B;
-$theme-icecold: $base0C;
-$theme-cerulean: $base0D;
-$theme-strikemaster: $base0E;
-$theme-roti: $base0F;
+$theme-accent1: $base0D;
+$theme-accent2: $base0C;
+$theme-accent3: $base0A;
+$theme-accent4: $base09;
 
 // Font stack
 $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;;
@@ -57,7 +53,7 @@ $inverse-color-muted: $base04;
 $inverse-heading-color: $base07;
 
 // Links
-$link-color: $theme-cerulean;
+$link-color: $theme-accent1;
 $link-hover-color: darken($link-color, 5%);
 
 // Tables & borders
@@ -82,25 +78,25 @@ $inverse-blockquote-border-color: $inverse-border-color;
 // Posts & post archives
 $post-header-background-color: $heading-color;
 $post-header-title-color: $body-bg;
-$post-header-external-color: $theme-melanie;
+$post-header-external-color: $theme-accent4;
 $post-archive-title-color: $heading-color;
 $post-archive-date-color: $body-color-muted;
-$post-archive-background-color: $theme-icecold;
-$post-archive-external-background-color: $theme-melanie;
+$post-archive-background-color: $theme-accent2;
+$post-archive-external-background-color: $theme-accent4;
 
 // Pagination
 $pagination-color: $heading-color;
-$pagination-background-hover-color: $theme-icecold;
+$pagination-background-hover-color: $theme-accent2;
 $pagination-disabled-color: $body-color-muted;
 $pagination-disabled-background-hover-color: darken($body-bg, 5%);
 
 // Masthead
 $masthead-title-color: $base07;
-$masthead-title-hover-color: $theme-turbo;
+$masthead-title-hover-color: $theme-accent3;
 $masthead-title-background-color: $base00;
 $masthead-link-color: $heading-color;
-$masthead-link-background-color: $theme-turbo;
-$masthead-link-active-color: $theme-turbo;
+$masthead-link-background-color: $theme-accent3;
+$masthead-link-active-color: $theme-accent3;
 $masthead-link-active-background-color: $heading-color;
 
 // Media breakpoints
