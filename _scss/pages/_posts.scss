@@ -13,29 +13,13 @@
 }
 
 // Wrapper for post/page header
-// 1. Negative margin is applied according to the container margin to
-//    ensure the content aligns cleanly
-// 2. Positive padding on the left side to counter the negative margin for that
-//    distinct box effect
-// 3. Different right padding for larger screens
 .page-header,
 .post-header {
   margin-bottom: 2rem;
 
   .page-header-inner,
   .post-header-inner {
-    display: inline-block;
-    margin-left: -($container-padding);
-    margin-right: -($container-padding);
-    padding: .5rem $container-padding;
-    background-color: $post-header-background-color;
-    color: $post-header-title-color;
-
-    @media (min-width: $media-breakpoint-lg) {
-      margin-left: -($container-padding-lg);
-      padding-left: $container-padding-lg;
-      padding-right: 2rem;
-    }
+    @include section-heading;
 
     // Custom modifier for posts with external links
     &.post-external-link {
