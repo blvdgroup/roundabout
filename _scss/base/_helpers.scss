@@ -25,6 +25,14 @@
   color: $body-color-muted;
 }
 
+.text-heading {
+  color: $heading-color;
+}
+
+.text-primary {
+  //
+}
+
 // Visibility
 .hidden-sm {
   @media (max-width: $media-breakpoint-lg) {

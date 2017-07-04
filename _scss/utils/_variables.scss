@@ -23,8 +23,15 @@ $base0D: #01a0e4;
 $base0E: #a16a94;
 $base0F: #cdab53;
 
-// Reassign color vars to semantic color scheme
-$brand-primary: $base0D;
+// Reassign color vars to the appropriate color name
+$theme-alizarincrimson: $base08;
+$theme-melanie: $base09;
+$theme-turbo: $base0A;
+$theme-greenhaze: $base0B;
+$theme-icecold: $base0C;
+$theme-cerulean: $base0D;
+$theme-strikemaster: $base0E;
+$theme-roti: $base0F;
 
 // Font stack
 $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;;
@@ -48,7 +55,7 @@ $inverse-color-muted: $base04;
 $inverse-heading-color: $base07;
 
 // Links
-$link-color: $brand-primary;
+$link-color: $theme-cerulean;
 $link-hover-color: darken($link-color, 5%);
 
 // Tables & borders
@@ -58,10 +65,10 @@ $table-border-color: darken($border-color, 5%);
 $table-odd-background-color: darken($body-bg, 5%);
 
 // Code
-$code-color: $base08;
+$code-color: $theme-alizarincrimson;
 $code-background-color: darken($base07, 5%);
 $code-linenos-color: $base05;
-$inverse-code-color: $base08;
+$inverse-code-color: $theme-alizarincrimson;
 $inverse-code-background-color: $base01;
 
 // Blockquote
@@ -73,25 +80,25 @@ $inverse-blockquote-border-color: $inverse-border-color;
 // Posts & post archives
 $post-header-background-color: $heading-color;
 $post-header-title-color: $body-bg;
-$post-header-external-color: $base09;
+$post-header-external-color: $theme-melanie;
 $post-archive-title-color: $heading-color;
 $post-archive-date-color: $body-color-muted;
-$post-archive-background-color: $base0C;
-$post-archive-external-background-color: $base09;
+$post-archive-background-color: $theme-icecold;
+$post-archive-external-background-color: $theme-melanie;
 
 // Pagination
 $pagination-color: $heading-color;
-$pagination-background-hover-color: $base0C;
+$pagination-background-hover-color: $theme-icecold;
 $pagination-disabled-color: $body-color-muted;
 $pagination-disabled-background-hover-color: darken($body-bg, 5%);
 
 // Masthead
 $masthead-title-color: $base07;
-$masthead-title-hover-color: $base0A;
+$masthead-title-hover-color: $theme-turbo;
 $masthead-title-background-color: $base00;
 $masthead-link-color: $heading-color;
-$masthead-link-background-color: $base0A;
-$masthead-link-active-color: $base0A;
+$masthead-link-background-color: $theme-turbo;
+$masthead-link-active-color: $theme-turbo;
 $masthead-link-active-background-color: $heading-color;
 
 // Media breakpoints
