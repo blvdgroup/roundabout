@@ -60,6 +60,21 @@ Most of these elements are styled by browsers with few modifications on our part
   <cite>&mdash; Banksy</cite>
 </blockquote>
 
+### Video embeds
+
+Video embeds should be wrapped inside a `<div class="video-wrapper">...</div>` element. This will ensure that the video scales properly according to container size.
+
+<div class="video-wrapper">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/g1GEY9k34AI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+### Twitter embeds
+
+Twitter embeds will automatically be aligned to the center of the current container.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/kE6fCM8y1K">pic.twitter.com/kE6fCM8y1K</a></p>&mdash; sunny out of context (@iasipmeme) <a href="https://twitter.com/iasipmeme/status/870304937648979968">June 1, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Footnotes
 
 Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this number[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
