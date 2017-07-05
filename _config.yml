@@ -14,6 +14,10 @@ baseurl:             "/roundabout"
 # Google Analytics (uncomment if you have any)
 # analytics_id:        "id"
 
+# List of time zones supported in the TZ database
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:            UTC
+
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
