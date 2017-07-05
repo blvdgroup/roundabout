@@ -34,6 +34,32 @@
       }
     }
   }
+
+  &.with-image {
+    width: 100%;
+    margin-top: -2rem;
+
+    img {
+      display: none;
+
+      @media (min-width: $media-breakpoint-md) {
+        display: block;
+        // Similar to `background-size: cover`
+        object-fit: cover;
+      }
+    }
+
+    @media (min-width: $media-breakpoint-md) {
+      position: relative;
+
+      .page-header-inner,
+      .post-header-inner {
+        position: absolute;
+        bottom: 1.5rem;
+        max-width: 70%;
+      }
+    }
+  }
 }
 
 // Blog post or page title
@@ -64,14 +90,14 @@
 // Post subtitle/abstract
 // 1. Use only 70% of the screen width on tablet/desktop screens
 .post-subtitle {
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
 
   @media (min-width: $media-breakpoint-sm) {
     width: 70%; // 1
   }
 
   span {
-    @include highlighted-text($theme-accent2, 0, .25rem);
+    @include highlighted-text($theme-accent3, 0, .25rem);
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.75;

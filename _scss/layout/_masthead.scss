@@ -10,7 +10,7 @@
   padding: 1rem 0;
   font-size: 1.375rem; // 1
   line-height: 1.13636364; // 1
-  border-bottom: 2px solid $heading-color;
+  border-top: 8px solid $masthead-border-color;
 
   @media (min-width: $media-breakpoint-md) {
     font-size: 1.5rem; // 1

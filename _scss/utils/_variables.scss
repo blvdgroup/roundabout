@@ -90,13 +90,14 @@ $pagination-disabled-color: $body-color-muted;
 $pagination-disabled-background-hover-color: darken($body-bg, 5%);
 
 // Masthead
+$masthead-border-color: $heading-color;
 $masthead-title-color: $base07;
 $masthead-title-hover-color: $theme-accent3;
 $masthead-title-background-color: $base00;
-$masthead-link-color: $heading-color;
-$masthead-link-background-color: $theme-accent3;
-$masthead-link-active-color: $theme-accent3;
-$masthead-link-active-background-color: $heading-color;
+$masthead-link-color: $theme-accent1;
+$masthead-link-background-color: darken($body-bg, 5%);
+$masthead-link-active-color: $heading-color;
+$masthead-link-active-background-color: $theme-accent2;
 
 // Media breakpoints
 // (NOTE: Always use @media (min-width) when using these variables.)
