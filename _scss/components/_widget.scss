@@ -9,5 +9,6 @@
   .widget-title {
     @include section-heading(.25rem);
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
