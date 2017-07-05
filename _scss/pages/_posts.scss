@@ -37,13 +37,13 @@
 
   &.with-image {
     width: 100%;
-    margin-top: -2rem;
 
     img {
       display: none;
 
       @media (min-width: $media-breakpoint-md) {
         display: block;
+        width: 100%;
         // Similar to `background-size: cover`
         object-fit: cover;
       }
@@ -51,6 +51,7 @@
 
     @media (min-width: $media-breakpoint-md) {
       position: relative;
+      margin-top: -2rem;
 
       .page-header-inner,
       .post-header-inner {

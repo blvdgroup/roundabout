@@ -2,6 +2,7 @@
 layout: post
 title: Example content
 subtitle: "This is an example blog post that shows several types of HTML content supported in this theme."
+# header_image_url: https://placehold.it/1140x350
 ---
 
 # Heading 1
